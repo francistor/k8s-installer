@@ -20,6 +20,7 @@
 
 # This is to make sure that the virsh commands executed via shell do see the networks
 # https://askubuntu.com/questions/1066230/cannot-execute-virsh-command-through-ssh-on-ubuntu-18-04
+
 export LIBVIRT_DEFAULT_URI=qemu:///system
 
 set -e
@@ -189,5 +190,4 @@ virt-install --name vm$VM_INDEX --memory $VM_MEMORY --vcpus $VM_CPU --disk $IMAG
 # Cleanup transient data
 rm -f $SCRATCH_DIR/user-data $SCRATCH_DIR/meta-data $SCRATCH_DIR/network-config
 
-# Generate network-data using VLAN
 

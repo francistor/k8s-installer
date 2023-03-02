@@ -2,6 +2,8 @@
 
 Utility scripts to build a Kubernetes cluster for experimentation in a single Linux Host.
 
+Intended for my personal use only.
+
 ## Quickstart
 
 Install `kvm`
@@ -38,5 +40,3 @@ export PASSWORD=<some password>
 # With defaults
 # ./vm-install.sh --vm-index 2 --base-image /home/francisco/images/focal-server-cloudimg-amd64.img --size 50G --pubkey /home/francisco/.ssh/id_rsa.pub --memory 1024 --cpu 1
 ```
-
-Requires mkpasswd installed (apt-get install whois)
